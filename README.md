@@ -78,7 +78,7 @@ $ node downloader.js -v "https://web.microsoftstream.com/video/VIDEO-1" -c 10
 
 Do not use system keyring to save the password:
 ```
-$ node downloader.js -u CODICEPERSONA -v "https://web.microsoftstream.com/video/VIDEO-1" -k
+$ node downloader.js -v "https://web.microsoftstream.com/video/VIDEO-1" -k
 ```
 
 Use Politecnico di Milano (Italy) login instead of default one (only for PoliMi students!)
