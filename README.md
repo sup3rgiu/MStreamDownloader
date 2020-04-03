@@ -46,7 +46,7 @@ Options:
   --version              Show version number                           [boolean]
   -v, --videoUrls                                             [array] [required]
   -u, --username         Your Microsoft Email                           [string]
-  -p, --polimi           PoliMi Login. If set, use Codice Persona as username
+  -m, --polimi           PoliMi Login. If set, use Codice Persona as username
                                                     [boolean] [default: false]
   -o, --outputDirectory                             [string] [default: "videos"]
   -q, --quality          Video Quality, usually [0-5]                   [number]
@@ -84,7 +84,7 @@ $ node downloader.js -u CODICEPERSONA -v "https://web.microsoftstream.com/video/
 Use Politecnico di Milano (Italy) login instead of default one (only for PoliMi students!)
 (PoliMi students can use this fork too: https://github.com/sup3rgiu/PoliDown)
 ```
-$ node downloader.js -v "https://web.microsoftstream.com/video/VIDEO-1" -p
+$ node downloader.js -v "https://web.microsoftstream.com/video/VIDEO-1" -m
 ```
 
 

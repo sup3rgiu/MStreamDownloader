@@ -16,14 +16,14 @@ const argv = yargs.options({
     p: { alias:'password', type: 'string', demandOption: false },
     o: { alias:'outputDirectory', type: 'string', default: 'videos' },
     q: { alias: 'quality', type: 'number', demandOption: false, describe: 'Video Quality, usually [0-5]'},
-    p: { alias: 'polimi', type: 'boolean', default: false, demandOption: false, describe: 'Use PoliMi Login. If set, use Codice Persona as username'},
+    m: { alias: 'polimi', type: 'boolean', default: false, demandOption: false, describe: 'Use PoliMi Login. If set, use Codice Persona as username'},
     k: { alias: 'noKeyring', type: 'boolean', default: false, demandOption: false, describe: 'Do not use system keyring'},
     c: { alias: 'conn', type: 'number', default: 16, demandOption: false, describe: 'Number of simultaneous connections [1-16]'}
 })
 .help('h')
 .alias('h', 'help')
 .example('node $0 -v "https://web.microsoftstream.com/video/9611baf5-b12e-4782-82fb-b2gf68c05adc"\n', "Standard usage")
-.example('node $0 -p -v "https://web.microsoftstream.com/video/9611baf5-b12e-4782-82fb-b2gf68c05adc"\n', "Use PoliMiLogin")
+.example('node $0 -m -v "https://web.microsoftstream.com/video/9611baf5-b12e-4782-82fb-b2gf68c05adc"\n', "Use PoliMiLogin")
 .example('node $0 -v "https://web.microsoftstream.com/video/9611baf5-b12e-4782-82fb-b2gf68c05adc" "https://web.microsoftstream.com/video/6711baa5-c56e-4782-82fb-c2ho68c05zde"\n', "Multiple videos download")
 .example('node $0 -v "https://web.microsoftstream.com/video/9611baf5-b12e-4782-82fb-b2gf68c05adc" -q 4\n', "Define default quality download to avoid manual prompt")
 .example('node $0 -v "https://web.microsoftstream.com/video/9611baf5-b12e-4782-82fb-b2gf68c05adc" -o "C:\\Lessons\\Videos"\n', "Define output directory (absoulte o relative path)")
