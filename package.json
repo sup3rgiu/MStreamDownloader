@@ -1,0 +1,21 @@
+{
+  "name": "MStreamDownloader",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sup3rgiu/MStreamDownloader.git"
+  },
+  "version": "1.0.0",
+  "description": "Download Microsoft Stream videos.",
+  "main": "downloader.js",
+  "keywords": [],
+  "author": "sup3rgiu",
+  "license": "MIT",
+  "dependencies": {
+    "keytar": "^5.4.0",
+    "m3u8-parser": "^4.4.0",
+    "puppeteer": "^2.1.1",
+    "request": "^2.88.2",
+    "terminal-kit": "^1.26.10",
+    "yargs": "^15.0.3"
+  }
+}
